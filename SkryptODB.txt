@@ -1,0 +1,9 @@
+set k=##class(Konto).%New()
+set klient = ##class(Klient).%New()
+set klient.Imie = "Michal"
+set klient.Nazwisko="Fisej"
+set bank = ##class(Bank).%New()
+set bank.Nazwa="BP"
+set konto = ##class(Konto).%New()
+set konto.Bank=bank
+set konto.WlascicielKonta=klient
